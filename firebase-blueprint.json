@@ -1,0 +1,34 @@
+{
+  "entities": {
+    "UserProfile": {
+      "collection": "users",
+      "path": "users/{userId}",
+      "fields": {
+        "uid": { "type": "string", "required": true },
+        "email": { "type": "string", "required": true },
+        "displayName": { "type": "string", "required": false },
+        "photoURL": { "type": "string", "required": false },
+        "createdAt": { "type": "timestamp", "required": true },
+        "lastLoginAt": { "type": "timestamp", "required": true }
+      }
+    },
+    "JournalEntry": {
+      "collection": "entries",
+      "path": "users/{userId}/entries/{entryId}",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "userId": { "type": "string", "required": true },
+        "title": { "type": "string", "required": true },
+        "category": { "type": "string", "required": true },
+        "mood": { "type": "string", "required": false },
+        "summary": { "type": "string", "required": false },
+        "keyInsights": { "type": "array", "required": false },
+        "actionItems": { "type": "array", "required": false },
+        "tags": { "type": "array", "required": false },
+        "messages": { "type": "array", "required": true },
+        "createdAt": { "type": "timestamp", "required": true },
+        "updatedAt": { "type": "timestamp", "required": true }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "ReflectAI - Private Journal & Reflection Studio",
+  "description": "User-authenticated multi-turn reflective journaling powered by Gemini 3.6 Flash and user-isolated Cloud Firestore persistence with Google Authentication.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
